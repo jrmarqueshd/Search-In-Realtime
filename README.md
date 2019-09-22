@@ -2,7 +2,7 @@
 
 Embed in your HTML before the end `</body>` tag
 ```
-<script src=""></script>
+<script src="https://gist.github.com/jrmarqueshd/2ece24c2efe4f791787b53ad827ad64b.js"></script>
 ```
 
 Define in your element `<input />`
