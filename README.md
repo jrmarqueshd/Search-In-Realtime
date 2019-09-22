@@ -2,7 +2,7 @@
 
 Embed in your HTML before the end `</body>` tag
 ```
-<script src="https://cdn.jsdelivr.net/gh/jrmarqueshd/simple-search-field/public/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/jrmarqueshd/simple-and-fast-realtime-search-field/public/main.js"></script>
 ```
 
 Define in your element `<input />`
