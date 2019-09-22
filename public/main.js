@@ -8,7 +8,9 @@ if(document.querySelector('input[type="search"').getAttribute("search-field") ==
         $searchInput.addEventListener("keyup", ()=>{
             [].forEach.call($childrenListSearch, (each)=>{
                 if($searchInput.value == each.innerHTML){
-                    console.log(each.innerHTML);
+                    each.style.display = "inherit";
+                }else{
+                    each.style.display = "none";
                 }
             });
         })
