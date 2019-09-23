@@ -11,7 +11,7 @@ if(document.querySelector('input[type="search"').getAttribute("search-field") ==
             let verifyInputValue = $searchInput.value;
             if($searchInput.value.length){
                 [].forEach.call($childrenListSearch, (eachChildren)=>{
-                    if(RegExp(verifyInputValue, "i").test(eachChildren.innerHTML)){
+                    if(RegExp(verifyInputValue, "i").test(eachChildren.innerContent || eachChildren.innerHTML || eachChildren.innerText)){
                         eachChildren.removeAttribute("custom-class");
                     }else{
                         eachChildren.setAttribute("custom-class", "hidden");
