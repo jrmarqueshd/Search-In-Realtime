@@ -47,7 +47,7 @@ body{
 }
 
 .lds-circle.off{
-    display: none;
+    display: none !important;
 }
 
 .lds-circle > div {
@@ -261,4 +261,21 @@ body .get-started-section mark{
     font-style: italic;
 }
 
+body footer{
+    padding: 25px 10px;
+    text-align: center;
+}
 
+body footer img{
+    margin-top: 25px;
+    transition: all 98.7ms linear;
+        -webkit-transition: all 98.7ms linear;
+        -moz-transition: all 98.7ms linear;
+        -ms-transition: all 98.7ms linear;
+        -o-transition: all 98.7ms linear;
+    width: 40px;
+}
+
+body footer img:hover{
+    opacity: 0.7;
+}

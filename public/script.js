@@ -1,31 +1,12 @@
-if(document.querySelector('input[type="search"').getAttribute("search-field") == "on"){
-    const $searchInput = document.querySelector("input");
-    const $head = document.querySelector("html > head");
-    const styledCustimized = `<style> ul > li[custom-class="hidden"]{display: none!important;}</style>`;
+window.addEventListener("load", ()=>{
+    document.querySelector(".lds-circle").classList.add("off");
 
-    $head.insertAdjacentHTML("beforeend", styledCustimized);
-    if(document.querySelector('ul[list-search-id="on"]')){
-        const $listToSearch = document.querySelector('ul[list-search-id="on"]');
-        let $childrenListSearch = $listToSearch.children;
-        $searchInput.addEventListener("keyup", ()=>{
-            let verifyInputValue = $searchInput.value;
-            if($searchInput.value.length){
-                [].forEach.call($childrenListSearch, (eachChildren)=>{
-                    if(RegExp(verifyInputValue, "i").test(eachChildren.innerHTML)){
-                        eachChildren.removeAttribute("custom-class");
-                    }else{
-                        eachChildren.setAttribute("custom-class", "hidden");
-                    }
-                });
-            }else{
-                [].forEach.call($childrenListSearch, (eachChildren)=>{
-                    eachChildren.removeAttribute("custom-class");
-                });
-            }
-        });
-    }else{
-        console.log('Você precisa definir uma <ul list-search-id="on">');
-    }
-}else{
-    console.log('Você precisa definir <input search-field="on" type="search" />')
-}
+    // Variaveis JS
+    let date = new Date();
+    let year = date.getUTCFullYear(-3);
+    let since = 2019;
+
+    // Variaveis Browser
+    let $year = document.getElementById("year");
+    $year.innerText = since==year ? `${year}` : `${since} - ${year}`;
+})
