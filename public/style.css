@@ -1,0 +1,215 @@
+*{
+    color: inherit;
+    border: 0;
+    box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    font-family: "Poppins", sans-serif;    
+    list-style: none;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    padding-block-start: 0; 
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    text-decoration: none;
+}
+
+*:focus,
+*:focus-within{
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body header,
+body .demostration,
+body .get-started-section{
+    background-color: rgb(66, 135, 245);
+    display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    height: 100vh;
+    width: 100%;
+}
+
+body header,
+body .get-started-section{
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: inherit;
+}
+
+body header h1{
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin: 25px 15px;
+}
+
+@keyframes targetAnimation{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+body header h1::after{
+    animation: targetAnimation 987ms infinite backwards;
+        -webkit-animation: targetAnimation 987ms infinite backwards;
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 0.8em;
+    padding: 0;
+    margin: 0 0 0 15px;
+    width: 4px;
+}
+
+body header h2{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+        max-width: 1140px;
+}
+
+body header nav{
+    margin-top: 25px;
+}
+
+body header nav a{
+    border: 2px solid rgb(153, 192, 255);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+body header nav a.demo{
+    background-color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 98.7ms ease;
+        -webkit-transition: all 98.7ms ease;
+        -moz-transition: all 98.7ms ease;
+        -ms-transition: all 98.7ms ease;
+        -o-transition: all 98.7ms ease;
+}
+
+body header nav a.demo:hover{
+    background-color: rgb(153, 192, 255);
+}
+
+body header nav a.get-started{
+    background-color: rgb(153, 192, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 98.7ms ease;
+        -webkit-transition: all 98.7ms ease;
+        -moz-transition: all 98.7ms ease;
+        -ms-transition: all 98.7ms ease;
+        -o-transition: all 98.7ms ease;
+}
+
+body header nav a.get-started:hover{
+    background-color: #fff;
+}
+
+body .demostration{
+    background-color: #fff;
+}
+
+body .demostration h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: 100%;
+        max-width: 1140px;
+}
+
+body .demostration input{
+    border: 2px solid rgb(153, 192, 255);
+    border-radius:5px;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        -ms-border-radius:5px;
+        -o-border-radius:5px;
+    font-size: 1.3em;
+    margin: 0 15px 25px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+        max-width: 1140px;
+}
+
+body .demostration ul{
+    border: 2px solid rgb(153, 192, 255);
+    border-radius:5px;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        -ms-border-radius:5px;
+        -o-border-radius:5px;
+    width: 100%;
+        max-width: 1140px;
+}
+
+body .demostration ul li{
+    padding: 10px;
+    font-weight: bold;
+}
+
+body .demostration ul li:nth-child(even){
+    background-color: rgb(153, 192, 255);
+    padding: 10px;
+}
+
+body .get-started-section > *{
+    color: #fff;
+    width: 100%;
+        max-width: 1140px; 
+}
+
+body .get-started-section h2{
+    text-align: center;
+}
+
+body .get-started-section p{
+    margin-top: 15px;
+}
+
+body .get-started-section blockquote{
+    background-color: #333;
+    padding: 10px;
+}
+
+body .get-started-section strong{
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+body .get-started-section mark{
+    background-color: transparent;
+    text-align: center;
+    font-style: italic;
+}
+
+
