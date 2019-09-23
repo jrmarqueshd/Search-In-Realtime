@@ -28,6 +28,55 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    position: relative;
+}
+
+.lds-circle {
+    background-color: rgb(66, 135, 245);
+    display: flex;
+        align-content: center;
+        justify-content: center;
+    height: 100vh;
+    position: fixed;
+        top: 0;
+        left: 0;
+    transform: translateZ(1px);
+    width: 100%;
+    z-index: 2;
+}
+
+.lds-circle.off{
+    display: none;
+}
+
+.lds-circle > div {
+    display: inline-block;
+    align-self: center;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border-radius: 50%;
+    background: #fff;
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes lds-circle {
+    0%, 100% {
+        animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(1800deg);
+        animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+        transform: rotateY(3600deg);
+    }
+}
+
 body header,
 body .demostration,
 body .get-started-section{
