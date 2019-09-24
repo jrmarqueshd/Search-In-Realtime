@@ -7,6 +7,10 @@ Versão: 1.1.1
 
 Tipo de licença: [MIT](#Sobre-a-licença)
 
+## Get Started
+
+- [Ler documentação](search-in-realtime.ga)
+
 ## Tecnologias utilizadas no processo de desenvolvimento
 
 - Expressão Regular;
