@@ -46,6 +46,12 @@ body{
     z-index: 2;
 }
 
+.lds-circle {
+    display: flex;
+        align-content: center;
+        justify-content: center;
+}
+
 .lds-circle.off{
     display: none !important;
 }
